@@ -8,9 +8,9 @@ import Section from "@/components/section";
 
 const Home: React.FC = () => {
   return (
-    <div className="">
+    <div className="w-screen h-screen">
 
-      <div className="p-[0px] flex flex-wrap justify-center items-center gap-[30px] min-h-screen">
+      <div className="flex flex-wrap justify-center items-center gap-[30px] min-h-screen mt-[100px]">
         <Card tec={"React"} text={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus doloribus quos in quam magni repellendus, quae ex"}/>
         <Card tec={"Tailwind"} text={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus doloribus quos in quam magni repellendus, quae ex"}/>
         <Card tec={"Next"} text={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus doloribus quos in quam magni repellendus, quae ex"}/>

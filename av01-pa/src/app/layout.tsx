@@ -31,10 +31,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-pallete04`}
       >
 
-        <header className="bg-pallete01 h-[7vh] flex justify-around items-center fixed w-screen">
-          <Link href={ROUTES.home} className="text-white font-bold bg-pallete05 p-[12px] rounded-[10px]">Tech</Link >
-          <Link href={ROUTES.media} className="text-white font-bold bg-pallete05 p-[12px] rounded-[10px]">Average</Link >
-          <Link href={ROUTES.imc} className="text-white font-bold bg-pallete05 p-[12px] rounded-[10px]">IMC</Link >
+        <header className="bg-pallete01 h-[7vh] flex justify-around items-center fixed w-screen p-[10px] top-0">
+          <Link href={ROUTES.home} className="text-white font-bold bg-pallete05 p-[8px] rounded-[10px]">Tech</Link >
+          <Link href={ROUTES.media} className="text-white font-bold bg-pallete05 p-[8px] rounded-[10px]">Average</Link >
+          <Link href={ROUTES.imc} className="text-white font-bold bg-pallete05 p-[8px] rounded-[10px]">IMC</Link >
         </header>
 
         {children}

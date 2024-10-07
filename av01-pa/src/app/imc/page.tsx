@@ -12,11 +12,11 @@ const Imc: React.FC = () => {
 
 
     return(
-        <div className="h-screen w-screen flex justify-center items-center">
+        <div className="h-screen w-screen flex justify-center items-center p-[10px]">
             <div className="bg-pallete02 h-[300px] gap-[20px] flex flex-col w-[500px] justify-around p-[10px] shadow-2xl">
-                <div className="flex w-full justify-center gap-[20px]">
-                    <input className="rounded-[10px] p-[5px] w-[40%]" type="number" step="0.010" placeholder="Your height (meters)" onChange={(e) => setHeight(parseFloat(e.target.value))}/>
-                    <input className="rounded-[10px] p-[5px] w-[40%]" type="number" step="0.010" placeholder="your weight (kilograms)" onChange={(e) => setWeight(parseFloat(e.target.value))}/>
+                <div className="flex flex-wrap w-full justify-center gap-[20px]">
+                    <input className="rounded-[10px] p-[5px] w-[200px] text-center" type="number" step="0.010" placeholder="Your height (meters)" onChange={(e) => setHeight(parseFloat(e.target.value))}/>
+                    <input className="rounded-[10px] p-[5px] w-[200px] text-center" type="number" step="0.010" placeholder="your weight (kilograms)" onChange={(e) => setWeight(parseFloat(e.target.value))}/>
                 </div>
 
 
