@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Link from "next/link";
+import { ROUTES } from "@/constants/routes";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,6 +30,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-pallete04`}
       >
+
+        <header className="bg-pallete01 h-[7vh] flex justify-around items-center fixed w-screen">
+          <Link href={ROUTES.home} className="text-white font-bold bg-pallete05 p-[12px] rounded-[10px]">Tech</Link >
+          <Link href={ROUTES.media} className="text-white font-bold bg-pallete05 p-[12px] rounded-[10px]">Average</Link >
+          <Link href={ROUTES.imc} className="text-white font-bold bg-pallete05 p-[12px] rounded-[10px]">IMC</Link >
+        </header>
+
         {children}
       </body>
     </html>
