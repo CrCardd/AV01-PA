@@ -34,16 +34,16 @@ const Average: React.FC = () => {
                 </div>
 
 
-                {result && result && 
+                {result && 
 
                     <>
                         <div className="flex flex-col items-center">
                             
                             <div className="bg-pallete01  flex flex-col justify-center items-center p-[15px] rounded-t-[15px]">
                                 <strong className="text-white text-[25px]">Result:</strong>
-                                {/* <p className="bg-white rounded-[35px] p-[8px]">
-                                    {result.toFixed(2)}
-                                </p> */}
+                              {result ? <p className="bg-white rounded-[35px] p-[8px]">
+                                      {result?.toFixed(2)}
+                                </p> : ""}
                             </div>
                             
                         </div>
