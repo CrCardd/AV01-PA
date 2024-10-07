@@ -34,7 +34,7 @@ const Average: React.FC = () => {
                 </div>
 
 
-                { result && 
+                {result && result && 
 
                     <>
                         <div className="flex flex-col items-center">
